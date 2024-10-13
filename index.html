@@ -5,18 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PedalWise - Melhores Rotas para Ciclistas</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Meta Tags para SEO -->
     <meta name="description" content="PedalWise ajuda ciclistas a encontrar as melhores rotas priorizando segurança, tempo e conveniência.">
     <meta name="keywords" content="ciclismo, rotas, segurança, pedalwise, aplicativo">
     <meta name="author" content="PedalWise">
-    <!-- Link para Fontes e Ícones -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-    <!-- Font Awesome para Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
     <header>
         <nav class="navbar">
             <div class="container">
@@ -29,7 +25,7 @@
                         <li><a href="#statistics">Estatísticas</a></li>
                         <li><a href="#contact">Contato</a></li>
                     </ul>
-                    <a href="#" class="btn-download">Baixar Aplicativo</a>
+                    <a href="https://www.figma.com/proto/4WmM9ONcqr5GWrYTZe3iud/IUM-project-oficial?node-id=12-1325&node-type=frame&t=4mqO40kQnbAy9Enj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=145%3A342" class="btn-download" target="_blank">Baixar Aplicativo</a>
                 </div>
                 <div class="hamburger">
                     <span></span>
@@ -40,7 +36,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section com Carrossel -->
     <section id="hero">
         <div class="container hero-content">
             <div class="hero-text">
@@ -48,29 +43,31 @@
                 <p>Descubra rotas personalizadas que priorizam sua segurança, tempo e conveniência.</p>
                 <div class="hero-buttons">
                     <a href="#" class="btn btn-primary">Baixar Aplicativo</a>
-                    <a href="#" class="btn btn-secondary view-prototype">Ver Protótipo</a>
+                    <a href="https://www.figma.com/proto/4WmM9ONcqr5GWrYTZe3iud/IUM-project-oficial?node-id=12-1325&node-type=frame&t=4mqO40kQnbAy9Enj-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=145%3A342" class="btn btn-secondary" target="_blank">Ver Protótipo</a>
                 </div>
+                
             </div>
             <div class="hero-image">
                 <div class="carousel">
                     <div class="carousel-slide">
-                        <img src="assets/img1.PNG" alt="Imagem 1">
+                        <img src="assets/inicio.png" alt="Imagem 0">
                     </div>
                     <div class="carousel-slide">
-                        <img src="assets/img2.PNG" alt="Imagem 2">
+                        <img src="assets/chat.png" alt="Imagem 1">
                     </div>
                     <div class="carousel-slide">
-                        <img src="assets/img3.PNG" alt="Imagem 3">
+                        <img src="assets/estatisticas.png" alt="Imagem 2">
                     </div>
-                    <!-- Setas de Navegação -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="carousel-slide">
+                        <img src="assets/eventos.png" alt="Imagem 3">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sobre o App -->
     <section id="about-app">
         <div class="container">
             <h2>Sobre o PedalWise</h2>
@@ -95,61 +92,40 @@
         </div>
     </section>
 
-    <!-- Funcionalidades do Aplicativo -->
-    <section id="features">
+    <section id="features-app">
         <div class="container">
-            <h2>Funcionalidades do Aplicativo</h2>
-            <div class="features-list">
-                <div class="feature-item">
-                    <img src="images/feature1.jpg" alt="Mapa Interativo">
-                    <h4>Mapa Interativo</h4>
-                    <p>Navegue por rotas detalhadas e atualizadas em tempo real.</p>
+            <h2>Sobre o PedalWise</h2>
+            <p>O PedalWise é um aplicativo que auxilia ciclistas a encontrar rotas ideais, priorizando segurança, eficiência e conveniência, adaptadas a diferentes perfis de usuários.</p>
+            <div class="features" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                <div class="feature-card" style="box-sizing: border-box; width: 100%; max-width: 300px; padding: 15px; margin: 15px; border: 1px solid #ddd; border-radius: 8px; text-align: center; overflow: hidden;">
+                    <h3>Eventos da Comunidade</h3>
+                    <img src="assets/eventos.png" alt="Eventos da Comunidade" style="width: 80%; max-width: 100%; height: auto; min-width: 100px; object-fit: contain; border-radius: 5px;">
+                    <p>Participe ou crie eventos e se conecte com outros ciclistas na sua região.</p>
                 </div>
-                <div class="feature-item">
-                    <img src="images/feature2.jpg" alt="Alertas de Segurança">
-                    <h4>Alertas de Segurança</h4>
-                    <p>Receba notificações sobre áreas de risco e condições climáticas.</p>
+                <div class="feature-card" style="box-sizing: border-box; width: 100%; max-width: 300px; padding: 15px; margin: 15px; border: 1px solid #ddd; border-radius: 8px; text-align: center; overflow: hidden;">
+                    <h3>Converse com seus Amigos</h3>
+                    <img src="assets/chat.png" alt="Converse com Amigos" style="width: 80%; max-width: 100%; height: auto; min-width: 100px; object-fit: contain; border-radius: 5px;">
+                    <p>Troque mensagens com seus amigos e compartilhe suas rotas e experiências.</p>
                 </div>
-                <div class="feature-item">
-                    <img src="images/feature3.jpg" alt="Comunidade">
-                    <h4>Comunidade</h4>
-                    <p>Conecte-se com outros ciclistas e compartilhe experiências.</p>
+                <div class="feature-card" style="box-sizing: border-box; width: 100%; max-width: 300px; padding: 15px; margin: 15px; border: 1px solid #ddd; border-radius: 8px; text-align: center; overflow: hidden;">
+                    <h3>Estatísticas de Corridas</h3>
+                    <img src="assets/estatisticas.png" alt="Estatísticas de Corridas" style="width: 80%; max-width: 100%; height: auto; min-width: 100px; object-fit: contain; border-radius: 5px;">
+                    <p>Acompanhe o desempenho das suas corridas com estatísticas detalhadas.</p>
+                </div>
+                <div class="feature-card" style="box-sizing: border-box; width: 100%; max-width: 300px; padding: 15px; margin: 15px; border: 1px solid #ddd; border-radius: 8px; text-align: center; overflow: hidden;">
+                    <h3>Escolha de Estradas</h3>
+                    <img src="assets/rotas.png" alt="Escolha de Estradas" style="width: 80%; max-width: 100%; height: auto; min-width: 100px; object-fit: contain; border-radius: 5px;">
+                    <p>Personalize suas rotas conforme suas prioridades: segurança, conforto ou velocidade.</p>
                 </div>
             </div>
         </div>
     </section>
+    
+    
+    
+    
+    
 
-    <!-- Estatísticas Importantes -->
-    <section id="statistics">
-        <div class="container">
-            <h2>Estatísticas sobre Ciclismo</h2>
-            <div class="statistics-content">
-                <div class="stat-chart" id="safety-chart">
-                    <h3>80% preferem rotas seguras</h3>
-                    <div class="chart-bar">
-                        <div class="bar" data-percentage="80"></div>
-                    </div>
-                </div>
-                <div class="stat-chart" id="time-chart">
-                    <h3>60% buscam eficiência de tempo</h3>
-                    <div class="chart-bar">
-                        <div class="bar" data-percentage="60"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Protótipo Interativo -->
-    <section id="prototype">
-        <div class="container">
-            <h2>Veja o Protótipo Interativo</h2>
-            <p>Explore o design e as funcionalidades do PedalWise antes de baixar.</p>
-            <a href="#" class="btn btn-primary view-prototype">Ver Protótipo no Figma</a>
-        </div>
-    </section>
-
-    <!-- Contato -->
     <section id="contact">
         <div class="container">
             <h2>Entre em Contato</h2>
@@ -158,7 +134,6 @@
         </div>
     </section>
 
-    <!-- Rodapé -->
     <footer>
         <div class="container footer-content">
             <div class="social-links">
@@ -170,7 +145,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="scripts.js"></script>
 </body>
 </html>
