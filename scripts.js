@@ -1,5 +1,3 @@
-// scripts.js
-
 document.addEventListener("DOMContentLoaded", () => {
     /* Navbar Toggle */
     const hamburger = document.querySelector('.hamburger');
@@ -29,6 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
     /* Carrossel de Imagens na Seção Hero */
     let slideIndex = 1;
     showSlides(slideIndex);
+
+    // Troca automática de slides a cada x segundos
+    const x = 5; // substitua 5 pelo número de segundos desejado
+    setInterval(function() {
+        plusSlides(1);
+    }, x * 1000);
 
     function plusSlides(n) {
         showSlides(slideIndex += n);
